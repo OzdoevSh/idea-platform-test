@@ -1,0 +1,77 @@
+.card {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #ccddf5;
+  border-radius: 8px;
+  max-height: 290px;
+}
+
+.left {
+  padding: 24px;
+  width: 35%;
+  height: 100%;
+}
+
+.divider {
+  height: auto;
+}
+
+.right {
+  padding: 24px;
+  width: 70%;
+  height: 100%;
+}
+
+.buy-button {
+  height: 70px;
+  width: 100%;
+}
+
+.buy-button-text {
+  color: white;
+  font-size: 20px;
+}
+
+.ant-divider .ant-divider-horizontal .line {
+  min-width: 200px;
+  width: 200px;
+}
+
+.time {
+  font-size: 32px;
+  color: #555555;
+}
+
+.city {
+  font-size: 18px;
+  color: #555555;
+}
+
+.date {
+  font-size: 18px;
+  color: #bbbbbb;
+}
+
+.company-logo {
+  width: 240px;
+}
+
+.transfer {
+  display: flex;
+}
+
+@media only screen and (max-width: 1168px) {
+  .company-logo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .company-logo {
+    width: 100%;
+  }
+
+  .transfer {
+    display: none;
+  }
+}

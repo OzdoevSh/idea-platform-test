@@ -1,0 +1,13 @@
+.filter-card {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #ccddf5;
+  border-radius: 8px;
+  height: 320px;
+  padding: 24px;
+}
+
+.filter-item-title {
+  color: #555555;
+  font-size: 18px;
+}
