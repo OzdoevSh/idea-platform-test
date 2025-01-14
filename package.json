@@ -6,7 +6,7 @@
   "scripts": {
     "client": "vite",
     "server": "npx json-server db.json --port 8090",
-    "build": "tsc -b && vite build && cp db.json build/",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
