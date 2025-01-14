@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData(): Promise<void> {
-      const response = await fetch('http://localhost:8000/tickets?_sort=price_rub&_order=desc');
+      const response = await fetch('http://localhost:8090/tickets?_sort=price_rub&_order=desc');
       const result = await response.json();
       let filteredTickets: Ticket[];
 
