@@ -14,7 +14,9 @@ function TicketCard({ ticket, currency }: TicketCardProps) {
   return (
     <Flex className="card">
       <Flex align="center" className="left" gap="small" vertical>
-        <img alt={ticket.company_name} className="company-logo" src={ticket.company_logo} />
+        <Flex vertical gap={2}>
+          <Typography.Text strong>{ticket.company_name}</Typography.Text>
+        </Flex>
         <Button className="buy-button" size="large" type="primary">
           <Flex vertical>
             <Typography.Text className="buy-button-text">Купить</Typography.Text>
