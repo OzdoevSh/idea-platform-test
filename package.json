@@ -5,6 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
+    "server": "npx json-server db.json --port 8000",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
