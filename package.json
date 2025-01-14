@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite",
+    "client": "vite",
     "server": "npx json-server db.json --port 8000",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && cp db.json build/",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "antd": "^5.22.4",
